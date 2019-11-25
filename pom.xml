@@ -82,7 +82,7 @@
         <artifactId>maven-shade-plugin</artifactId>
         <version>3.1.1</version>
         <configuration>
-          <finalName>main</finalName>
+          <finalName>app</finalName>
         </configuration>
         <executions>
           <execution>
@@ -93,7 +93,7 @@
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.Main</mainClass>
+                  <mainClass>com.App</mainClass>
                 </transformer>
               </transformers>
             </configuration>
