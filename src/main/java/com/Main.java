@@ -6,16 +6,16 @@ import org.glassfish.jersey.server.ResourceConfig;
 import java.net.URI;
 
 public class Main {
-  protected static final String URI = "http://0.0.0.0:8123/";
+  protected static final String BASE_URI = "http://0.0.0.0:8123/";
 
   public static void main(String[] args) {
     startServer();
-    System.out.println(String.format("Endpoint dostepny na %sstatus", URI));
+    System.out.println(String.format("Endpoint dostepny na %sstatus", BASE_URI));
   }
   
   protected static HttpServer startServer() {
     final ResourceConfig rc = new ResourceConfig().packages("com");
-    return GrizzlyHttpServerFactory.createHttpServer(URI.create(URI), rc);
+    return GrizzlyHttpServerFactory.createHttpServer(URI.create(BASE_URI), rc);
   }
 }
 
