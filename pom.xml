@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.miguno</groupId>
+  <groupId>com</groupId>
   <artifactId>java-docker-build</artifactId>
   <packaging>jar</packaging>
   <version>1.0.0-SNAPSHOT</version>
@@ -93,7 +93,7 @@
             <configuration>
               <transformers>
                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>com.miguno.App</mainClass>
+                  <mainClass>com.App</mainClass>
                 </transformer>
               </transformers>
             </configuration>
